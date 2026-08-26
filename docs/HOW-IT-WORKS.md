@@ -1,70 +1,49 @@
 # How Hermes Agent Works
 
-The visuals on this page are static SVGs, so they render directly on GitHub on phones and desktop browsers. Each one is generated from a model specific to this skill.
+Configure, extend, or contribute to Hermes Agent with explicit local/runtime safety boundaries.
 
-## System architecture
+![Detailed systems blueprint for Hermes Agent](../assets/system-blueprint.png)
 
-![Detailed system map for Hermes Agent](../assets/system-map.svg)
-
-### Components
-
-- **1. Hermes configuration:** participates in identify the requested hermes extension.
-- **2. Agent runtime:** participates in inspect configuration and runtime version.
-- **3. Tools and models:** participates in add the smallest compatible change.
-- **4. Skills and memory:** participates in connect tools skills or model settings.
-- **5. Verified behavior:** participates in run a disposable behavior check.
-
-## Actor and data sequence
-
-![Actor and data sequence for Hermes Agent](../assets/operation-sequence.svg)
+## Stages
 
 ### 1. Identify the requested Hermes extension
 
 **Primary surface:** `Hermes configuration`
 
-Record the concrete input, the operation performed, and the evidence produced at this stage. Continue only when the output is sufficient for the next stage; otherwise preserve the blocker and stop.
+Record the input, operation, observable output, and any decision that changes scope. Stop here if the output is missing, contradictory, or insufficient for the next stage.
 ### 2. Inspect configuration and runtime version
 
 **Primary surface:** `Agent runtime`
 
-Record the concrete input, the operation performed, and the evidence produced at this stage. Continue only when the output is sufficient for the next stage; otherwise preserve the blocker and stop.
+Record the input, operation, observable output, and any decision that changes scope. Stop here if the output is missing, contradictory, or insufficient for the next stage.
 ### 3. Add the smallest compatible change
 
 **Primary surface:** `Tools and models`
 
-Record the concrete input, the operation performed, and the evidence produced at this stage. Continue only when the output is sufficient for the next stage; otherwise preserve the blocker and stop.
+Record the input, operation, observable output, and any decision that changes scope. Stop here if the output is missing, contradictory, or insufficient for the next stage.
 ### 4. Connect tools skills or model settings
 
 **Primary surface:** `Skills and memory`
 
-Record the concrete input, the operation performed, and the evidence produced at this stage. Continue only when the output is sufficient for the next stage; otherwise preserve the blocker and stop.
+Record the input, operation, observable output, and any decision that changes scope. Stop here if the output is missing, contradictory, or insufficient for the next stage.
 ### 5. Run a disposable behavior check
 
 **Primary surface:** `Verified behavior`
 
-Record the concrete input, the operation performed, and the evidence produced at this stage. Continue only when the output is sufficient for the next stage; otherwise preserve the blocker and stop.
+Record the input, operation, observable output, and any decision that changes scope. Stop here if the output is missing, contradictory, or insufficient for the next stage.
 ### 6. Document rollback and environment assumptions
 
-**Primary surface:** `Hermes configuration`
+**Primary surface:** `Verified behavior`
 
-Record the concrete input, the operation performed, and the evidence produced at this stage. Continue only when the output is sufficient for the next stage; otherwise preserve the blocker and stop.
+Record the input, operation, observable output, and any decision that changes scope. Stop here if the output is missing, contradictory, or insufficient for the next stage.
 
-## Example output shape
+## Failure handling
 
-![Illustrative output for Hermes Agent](../assets/example-output.svg)
+- **Authorization failure:** do not probe credentials or broaden access; report the missing authority.
+- **Target ambiguity:** stop before mutation and request the minimum identifying information.
+- **Tool or service failure:** retain error evidence, retry only safe transient failures, and cap retries.
+- **Verification failure:** classify the run as incomplete even when the preceding operation returned success.
 
-The example is a visual contract: a real run may look different, but it should expose comparable state, provenance, and verification information. It is not presented as evidence of a live external action.
+## Completion evidence
 
-## Decision and stop conditions
-
-![Decision guide for Hermes Agent](../assets/decision-guide.svg)
-
-The workflow stops when the target is ambiguous, the relevant surface is unavailable or unauthorized, or the final artifact cannot be checked. A logged-in session or successful tool call is not by itself proof that the requested outcome is complete.
-
-## Verification checklist
-
-- Confirm every component shown in the system map exists in the target environment.
-- Trace the actor sequence using actual tool output or artifact state.
-- Compare the result with the example-output information contract.
-- Re-read or reopen the final artifact instead of trusting an attempt message.
-- Report omitted stages, unsupported capabilities, and remaining human decisions.
+The handoff should contain the original request, inspection state, preview or plan, exact execution result, direct verification, and a final receipt naming limitations and withheld actions.
