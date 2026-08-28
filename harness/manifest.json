@@ -1,0 +1,85 @@
+{
+  "protocol_version": "0.1",
+  "skill": {
+    "id": "hermes-skill-hermes-agent",
+    "display_name": "Hermes Agent",
+    "description": "Configure, extend, or contribute to Hermes Agent with explicit local/runtime safety boundaries."
+  },
+  "task_profile": {
+    "category": "integration",
+    "architecture": "stack",
+    "artifact": "dashboard",
+    "inputs": [
+      "Hermes configuration",
+      "Agent runtime"
+    ],
+    "outputs": [
+      "Verified behavior",
+      "Model route",
+      "Tool registry",
+      "Skill loaded",
+      "Smoke test"
+    ]
+  },
+  "modules": {
+    "memory": {
+      "strategy": "layered_working_context",
+      "responsibility": "Retain hermes configuration plus decisions, observations, and verification evidence needed to resume safely."
+    },
+    "planning": {
+      "strategy": "layered_specification_plan",
+      "responsibility": "Transform agent runtime into the ordered, bounded stages defined by this skill."
+    },
+    "action": {
+      "strategy": "inspect_preview_authorize_execute_reread",
+      "responsibility": "Advance the workflow through tools and models while preserving stop conditions and user authority."
+    },
+    "capability": {
+      "strategy": "task_conditioned_minimum_capability_set",
+      "responsibility": "Expose the minimum service operations required for the requested target; writes require an explicit preview gate."
+    }
+  },
+  "execution": {
+    "stages": [
+      "Identify the requested Hermes extension",
+      "Inspect configuration and runtime version",
+      "Add the smallest compatible change",
+      "Connect tools skills or model settings",
+      "Run a disposable behavior check",
+      "Document rollback and environment assumptions"
+    ],
+    "gates": [
+      "scope_and_authority_confirmed",
+      "capability_and_dependency_preflight",
+      "consequential_action_previewed_when_applicable",
+      "output_reopened_and_verified"
+    ]
+  },
+  "verification": {
+    "evidence": [
+      "Model route",
+      "Tool registry",
+      "Skill loaded",
+      "Smoke test"
+    ],
+    "metrics": [
+      "task_success",
+      "verification_pass_rate",
+      "tool_error_rate",
+      "repair_count",
+      "latency_ms",
+      "estimated_cost_usd"
+    ]
+  },
+  "failure_policy": {
+    "max_repairs": 2,
+    "schema_error": "repair_then_stop",
+    "permission_error": "stop_without_retry",
+    "verification_failure": "report_incomplete"
+  },
+  "maturity": {
+    "level": "executable_contract",
+    "runtime_scope": "validation_and_dry_run_planning",
+    "claim_boundary": "This repository validates and plans the harness contract; it does not claim live service execution or benchmark gains without a connected adapter and measured evidence."
+  }
+}

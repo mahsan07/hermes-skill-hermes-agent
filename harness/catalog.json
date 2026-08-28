@@ -1,0 +1,1502 @@
+{
+  "protocol_version": "0.1",
+  "count": 65,
+  "selection_mode": "transparent_lexical_baseline",
+  "skills": [
+    {
+      "id": "hermes-skill-architecture-diagram",
+      "display_name": "Architecture Diagram",
+      "description": "Create dark, readable SVG architecture diagrams from system descriptions.",
+      "category": "creative",
+      "architecture": "pipeline",
+      "components": [
+        "System brief",
+        "Component inventory",
+        "Relationship model",
+        "SVG layout engine",
+        "Validated diagram"
+      ],
+      "stages": [
+        "Extract named systems and boundaries",
+        "Group components into readable layers",
+        "Map protocols and trust boundaries",
+        "Route connectors without visual collisions",
+        "Render dark-theme SVG",
+        "Inspect labels arrows and mobile scaling"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-architecture-diagram/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-codebase-inspection",
+      "display_name": "Codebase Inspection",
+      "description": "Measure a codebase\u2019s size, languages, and composition without changing it.",
+      "category": "engineering",
+      "architecture": "stack",
+      "components": [
+        "Repository tree",
+        "Language detector",
+        "pygount counters",
+        "Ratio calculator",
+        "Inspection report"
+      ],
+      "stages": [
+        "Confirm repository scope and exclusions",
+        "Enumerate tracked source files",
+        "Classify languages and generated code",
+        "Count code comments and blanks",
+        "Calculate composition ratios",
+        "Report measurements without modification"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-codebase-inspection/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-design-md",
+      "display_name": "DESIGN.md",
+      "description": "Author and validate a concise DESIGN.md token specification.",
+      "category": "creative",
+      "architecture": "stack",
+      "components": [
+        "Product intent",
+        "Token taxonomy",
+        "DESIGN.md schema",
+        "Token validator",
+        "Exported specification"
+      ],
+      "stages": [
+        "Collect brand and interface constraints",
+        "Define primitive and semantic tokens",
+        "Express component-level decisions",
+        "Validate names values and references",
+        "Resolve conflicting token definitions",
+        "Export a concise DESIGN.md"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-design-md/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-dogfood",
+      "display_name": "Dogfood",
+      "description": "Explore a web app like a user and report reproducible bugs with evidence.",
+      "category": "engineering",
+      "architecture": "loop",
+      "components": [
+        "Target web app",
+        "User journeys",
+        "Browser observations",
+        "Evidence captures",
+        "Bug report queue"
+      ],
+      "stages": [
+        "Select critical user journeys",
+        "Exercise the interface as a real user",
+        "Capture state before and after failures",
+        "Reduce each issue to reproducible steps",
+        "Grade severity and confidence",
+        "Deliver an evidence-linked report"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-dogfood/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-github-code-review",
+      "display_name": "GitHub Code Review",
+      "description": "Review pull requests for correctness, security, tests, and maintainability.",
+      "category": "engineering",
+      "architecture": "split",
+      "components": [
+        "Pull request diff",
+        "Repository context",
+        "Risk analysis",
+        "Test evidence",
+        "Review comments"
+      ],
+      "stages": [
+        "Read the PR intent and changed files",
+        "Trace affected call paths",
+        "Check security correctness and edge cases",
+        "Evaluate tests against changed behavior",
+        "Separate blockers from suggestions",
+        "Publish focused review findings"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-github-code-review/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-github-pr-workflow",
+      "display_name": "GitHub PR Workflow",
+      "description": "Run a guarded branch-to-PR workflow with tests and explicit merge gates.",
+      "category": "engineering",
+      "architecture": "loop",
+      "components": [
+        "Working tree",
+        "Feature branch",
+        "Focused checks",
+        "Pull request",
+        "CI and review gates"
+      ],
+      "stages": [
+        "Inspect status remotes and user changes",
+        "Create a descriptive feature branch",
+        "Implement and run focused checks",
+        "Commit only the intended files",
+        "Open a risk-aware pull request",
+        "Merge only after CI and review pass"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-github-pr-workflow/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-hermes-agent-skill-authoring",
+      "display_name": "Hermes Agent Skill Authoring",
+      "description": "Create focused Hermes SKILL.md packages with valid metadata and reusable workflows.",
+      "category": "agent",
+      "architecture": "stack",
+      "components": [
+        "User trigger examples",
+        "Skill contract",
+        "SKILL.md frontmatter",
+        "Workflow instructions",
+        "Validation package"
+      ],
+      "stages": [
+        "Identify requests that should trigger the skill",
+        "Define the narrow capability boundary",
+        "Write precise name and trigger description",
+        "Encode imperative operating steps",
+        "Add only necessary resources",
+        "Validate metadata structure and examples"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-hermes-agent-skill-authoring/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-humanizer",
+      "display_name": "Humanizer",
+      "description": "Make drafts sound natural while preserving facts, intent, and the author\u2019s voice.",
+      "category": "engineering",
+      "architecture": "split",
+      "components": [
+        "Source draft",
+        "Facts and intent",
+        "AI-pattern detector",
+        "Voice revision",
+        "Meaning-preservation check"
+      ],
+      "stages": [
+        "Identify factual claims and author intent",
+        "Mark repetitive or artificial phrasing",
+        "Rewrite rhythm diction and transitions",
+        "Preserve technical meaning and commitments",
+        "Compare revised text against source",
+        "Return natural copy with no invented facts"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-humanizer/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-llm-wiki",
+      "display_name": "Llm Wiki",
+      "description": "Build and query an interlinked Markdown knowledge base with explicit sources.",
+      "category": "research",
+      "architecture": "graph",
+      "components": [
+        "Source notes",
+        "Markdown pages",
+        "Entity linker",
+        "Backlink graph",
+        "Query interface"
+      ],
+      "stages": [
+        "Ingest source-backed notes",
+        "Create focused interlinked pages",
+        "Extract entities and explicit relations",
+        "Build backlinks and topic clusters",
+        "Answer through linked evidence paths",
+        "Expose source gaps and contradictions"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-llm-wiki/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-requesting-code-review",
+      "display_name": "Requesting Code Review",
+      "description": "Run a pre-commit quality and security pass and prepare a focused review request.",
+      "category": "engineering",
+      "architecture": "pipeline",
+      "components": [
+        "Local changes",
+        "Security scan",
+        "Quality checks",
+        "Review brief",
+        "Reviewer handoff"
+      ],
+      "stages": [
+        "Inspect the exact change set",
+        "Run secrets and dependency checks",
+        "Run tests lint and formatting",
+        "Fix safe mechanical issues",
+        "Summarize behavior risk and evidence",
+        "Request review with a focused brief"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-requesting-code-review/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-systematic-debugging",
+      "display_name": "Systematic Debugging",
+      "description": "Find root causes through evidence, controlled experiments, and verified fixes.",
+      "category": "engineering",
+      "architecture": "loop",
+      "components": [
+        "Observed failure",
+        "Minimal reproduction",
+        "Competing hypotheses",
+        "Controlled experiment",
+        "Verified root cause"
+      ],
+      "stages": [
+        "Capture the failure exactly",
+        "Reduce it to a stable reproduction",
+        "Rank hypotheses by available evidence",
+        "Change one variable per experiment",
+        "Confirm the causal mechanism",
+        "Verify the fix and regression coverage"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-systematic-debugging/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-test-driven-development",
+      "display_name": "Test Driven Development",
+      "description": "Implement changes through RED-GREEN-REFACTOR with focused regression coverage.",
+      "category": "engineering",
+      "architecture": "loop",
+      "components": [
+        "Behavior requirement",
+        "Failing test",
+        "Minimal implementation",
+        "Passing suite",
+        "Refactored design"
+      ],
+      "stages": [
+        "Translate behavior into a focused test",
+        "Run it and confirm the expected failure",
+        "Implement the smallest passing change",
+        "Run focused and regression suites",
+        "Refactor without changing behavior",
+        "Record RED GREEN REFACTOR evidence"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-test-driven-development/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-understand",
+      "display_name": "Understand",
+      "description": "Analyze a codebase into an interactive knowledge graph of components and relationships.",
+      "category": "engineering",
+      "architecture": "graph",
+      "components": [
+        "Repository files",
+        "Symbol extractor",
+        "Component model",
+        "Relationship graph",
+        "Interactive explorer"
+      ],
+      "stages": [
+        "Index source files and project metadata",
+        "Extract symbols modules and entry points",
+        "Infer components from code evidence",
+        "Connect calls imports and data flows",
+        "Cluster subsystems and boundaries",
+        "Generate an explorable knowledge graph"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-understand/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-understand-diff",
+      "display_name": "Understand Diff",
+      "description": "Explain what a diff changes, which components it affects, and what risks it introduces.",
+      "category": "engineering",
+      "architecture": "split",
+      "components": [
+        "Base revision",
+        "Changed files",
+        "Dependency graph",
+        "Impact paths",
+        "Risk report"
+      ],
+      "stages": [
+        "Parse additions deletions and renames",
+        "Map changed symbols to components",
+        "Trace downstream consumers",
+        "Identify behavior and contract changes",
+        "Score test security and rollout risks",
+        "Explain impact with file-level evidence"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-understand-diff/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-understand-onboard",
+      "display_name": "Understand Onboard",
+      "description": "Generate an evidence-backed onboarding guide from a repository and its operational surfaces.",
+      "category": "engineering",
+      "architecture": "stack",
+      "components": [
+        "Repository map",
+        "Runtime surfaces",
+        "Domain concepts",
+        "Operational workflows",
+        "Onboarding guide"
+      ],
+      "stages": [
+        "Identify entry points and ownership areas",
+        "Map build test and deployment paths",
+        "Extract domain vocabulary from code",
+        "Trace one end-to-end user flow",
+        "Document common failure surfaces",
+        "Assemble a role-aware onboarding path"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-understand-onboard/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-ai-os-fluid-interface-design",
+      "display_name": "AI-OS Fluid Interface Design",
+      "description": "Use when building or reviewing AI-OS, Hermes, dashboard, desktop, phone/PWA, chat, sheet, drawer, gesture, motion, or streaming-state interfaces. Apply fluid, responsive, interruptible behavior with accessibility and deterministic verification.",
+      "category": "agent",
+      "architecture": "canvas",
+      "components": [
+        "User intent stream",
+        "Interruptible state model",
+        "Responsive surfaces",
+        "Motion system",
+        "Reliability feedback"
+      ],
+      "stages": [
+        "Model idle loading streaming and failure states",
+        "Map desktop phone and PWA surfaces",
+        "Design gestures sheets drawers and chat",
+        "Specify interruptible motion transitions",
+        "Add accessibility and reduced-motion paths",
+        "Verify deterministic state feedback"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-ai-os-fluid-interface-design/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-airtable",
+      "display_name": "Airtable",
+      "description": "Use Airtable REST API via curl for records CRUD, filters, and upserts.",
+      "category": "integration",
+      "architecture": "pipeline",
+      "components": [
+        "User record request",
+        "Base and table schema",
+        "Filter or upsert builder",
+        "Airtable REST API",
+        "Re-read verification"
+      ],
+      "stages": [
+        "Resolve base table fields and record target",
+        "Build a precise filter or mutation body",
+        "Preview affected records before writes",
+        "Send the smallest REST operation",
+        "Re-read returned record IDs and fields",
+        "Report exact changes and rejected rows"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-airtable/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-arxiv",
+      "display_name": "arXiv",
+      "description": "Search arXiv papers by keyword, author, category, or ID and return source-linked results.",
+      "category": "research",
+      "architecture": "pipeline",
+      "components": [
+        "Research question",
+        "arXiv query syntax",
+        "Paper metadata API",
+        "Relevance filter",
+        "Source-linked results"
+      ],
+      "stages": [
+        "Translate topic author or ID into a query",
+        "Fetch metadata from arXiv",
+        "Normalize titles authors dates and categories",
+        "Rank by relevance and recency",
+        "Retain canonical paper and PDF links",
+        "Return a cited reading shortlist"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-arxiv/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-ascii-art",
+      "display_name": "Ascii Art",
+      "description": "Create ASCII art with pyfiglet, cowsay, boxes, or image-to-ASCII conversion.",
+      "category": "creative",
+      "architecture": "canvas",
+      "components": [
+        "Text or source image",
+        "Style selector",
+        "Glyph density mapper",
+        "Terminal canvas",
+        "Exported ASCII artwork"
+      ],
+      "stages": [
+        "Choose banner character or image mode",
+        "Set target width font and character ramp",
+        "Convert shapes or luminance into glyphs",
+        "Adjust spacing contrast and alignment",
+        "Preview in a monospaced canvas",
+        "Export plain or ANSI-colored art"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-ascii-art/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-ascii-video",
+      "display_name": "Ascii Video",
+      "description": "Convert video or audio into colored ASCII MP4 or GIF output.",
+      "category": "creative",
+      "architecture": "pipeline",
+      "components": [
+        "Video or audio source",
+        "Frame and beat sampler",
+        "Color glyph renderer",
+        "FFmpeg encoder",
+        "MP4 or GIF"
+      ],
+      "stages": [
+        "Inspect duration resolution and audio",
+        "Choose frame rate width and glyph palette",
+        "Render each frame as colored characters",
+        "Synchronize frames with source timing",
+        "Encode MP4 or GIF with FFmpeg",
+        "Inspect motion readability and file size"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-ascii-video/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-blogwatcher",
+      "display_name": "Blogwatcher",
+      "description": "Monitor blogs and RSS/Atom feeds through a repeatable blogwatcher workflow.",
+      "category": "research",
+      "architecture": "loop",
+      "components": [
+        "RSS and Atom URLs",
+        "Feed poller",
+        "Entry fingerprint store",
+        "Change detector",
+        "Digest output"
+      ],
+      "stages": [
+        "Register canonical feed URLs",
+        "Poll feeds on the chosen cadence",
+        "Normalize entry IDs dates and links",
+        "Compare fingerprints against prior state",
+        "Collect only new or changed entries",
+        "Produce a deduplicated digest"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-blogwatcher/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-claude-code",
+      "display_name": "Claude Code",
+      "description": "Delegate bounded coding tasks to Claude Code CLI with explicit scope and review gates.",
+      "category": "engineering",
+      "architecture": "split",
+      "components": [
+        "Bounded coding request",
+        "Repository instructions",
+        "Claude Code session",
+        "Local diff and tests",
+        "Human review gate"
+      ],
+      "stages": [
+        "Define files behavior and stop conditions",
+        "Provide repository-local instructions",
+        "Delegate the bounded implementation",
+        "Inspect the resulting diff",
+        "Run independent tests and checks",
+        "Return changes for human review"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-claude-code/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-claude-design",
+      "display_name": "Claude Design",
+      "description": "Design one-off HTML artifacts such as landing pages, decks, and prototypes.",
+      "category": "creative",
+      "architecture": "canvas",
+      "components": [
+        "Design brief",
+        "Content hierarchy",
+        "HTML and CSS composition",
+        "Responsive preview",
+        "One-off artifact"
+      ],
+      "stages": [
+        "Translate intent into visual hierarchy",
+        "Choose typography color and spacing",
+        "Build the semantic HTML structure",
+        "Add responsive layout and interaction",
+        "Render desktop and mobile previews",
+        "Deliver the self-contained artifact"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-claude-design/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-codex",
+      "display_name": "Codex",
+      "description": "Delegate bounded coding tasks to OpenAI Codex CLI with explicit scope and review gates.",
+      "category": "engineering",
+      "architecture": "split",
+      "components": [
+        "Bounded coding request",
+        "Repository context",
+        "Codex CLI session",
+        "Patch and test evidence",
+        "Human handoff"
+      ],
+      "stages": [
+        "Define the exact engineering outcome",
+        "Load only relevant repository context",
+        "Delegate implementation to Codex CLI",
+        "Inspect changed files and rationale",
+        "Run independent verification",
+        "Return a reviewable handoff"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-codex/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-comfyui",
+      "display_name": "ComfyUI",
+      "description": "Generate images, video, and audio with ComfyUI using reproducible workflows and parameter injection.",
+      "category": "creative",
+      "architecture": "graph",
+      "components": [
+        "Prompt and source assets",
+        "Model and sampler nodes",
+        "Conditioning graph",
+        "GPU execution queue",
+        "Image video or audio output"
+      ],
+      "stages": [
+        "Choose a compatible workflow and models",
+        "Inject prompts seeds and dimensions",
+        "Wire loaders conditioning sampler and decoder",
+        "Queue the graph on the ComfyUI runtime",
+        "Track node progress and failures",
+        "Inspect metadata and rendered media"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-comfyui/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-excalidraw",
+      "display_name": "Excalidraw",
+      "description": "Create hand-drawn Excalidraw JSON diagrams for architecture, flows, and sequences.",
+      "category": "creative",
+      "architecture": "canvas",
+      "components": [
+        "Architecture or flow brief",
+        "Shape vocabulary",
+        "Excalidraw scene graph",
+        "Connector routing",
+        "Editable JSON diagram"
+      ],
+      "stages": [
+        "Identify actors systems and relationships",
+        "Choose frames shapes and visual grouping",
+        "Place elements on a hand-drawn canvas",
+        "Connect flows with labeled arrows",
+        "Check overlap hierarchy and reading order",
+        "Export valid editable Excalidraw JSON"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-excalidraw/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-gif-search",
+      "display_name": "Gif Search",
+      "description": "Search and download GIFs from Tenor through a controlled command-line workflow.",
+      "category": "research",
+      "architecture": "pipeline",
+      "components": [
+        "Search phrase",
+        "Tenor search endpoint",
+        "Relevance and content filter",
+        "Preview candidates",
+        "Downloaded GIF"
+      ],
+      "stages": [
+        "Convert intent into concise search terms",
+        "Query Tenor with a bounded result count",
+        "Inspect previews dimensions and source links",
+        "Filter irrelevant or unsafe results",
+        "Download only the selected asset",
+        "Report attribution and local path"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-gif-search/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-github-auth",
+      "display_name": "GitHub Authentication",
+      "description": "Set up GitHub authentication using HTTPS tokens, SSH keys, or gh CLI login without exposing credentials.",
+      "category": "integration",
+      "architecture": "split",
+      "components": [
+        "GitHub account",
+        "HTTPS token or SSH choice",
+        "Credential helper or keychain",
+        "gh authentication",
+        "Read-only smoke check"
+      ],
+      "stages": [
+        "Choose HTTPS token SSH or browser login",
+        "Create or select credentials privately",
+        "Store through an approved credential helper",
+        "Authenticate gh or Git transport",
+        "Test identity and repository access",
+        "Report status without printing secrets"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-github-auth/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-github-issues",
+      "display_name": "GitHub Issues",
+      "description": "Create, triage, label, and assign GitHub issues through guarded gh or REST workflows.",
+      "category": "integration",
+      "architecture": "pipeline",
+      "components": [
+        "Issue request",
+        "Repository and labels",
+        "Issue draft",
+        "GitHub API or gh",
+        "Created issue verification"
+      ],
+      "stages": [
+        "Resolve repository owner and target",
+        "Draft title body labels and assignee",
+        "Preview the exact issue payload",
+        "Create only after authorization",
+        "Fetch the issue by returned number",
+        "Report canonical URL and final fields"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-github-issues/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-github-repo-management",
+      "display_name": "GitHub Repository Management",
+      "description": "Clone, create, fork, and manage GitHub repositories, remotes, and releases.",
+      "category": "integration",
+      "architecture": "hub",
+      "components": [
+        "Repository intent",
+        "Local Git state",
+        "GitHub repository API",
+        "Remote and release objects",
+        "Verified repository state"
+      ],
+      "stages": [
+        "Confirm owner repository and requested operation",
+        "Inspect local branches remotes and status",
+        "Preview create fork or release changes",
+        "Execute the authorized GitHub operation",
+        "Fetch repository and remote state again",
+        "Report URLs SHAs and visibility"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-github-repo-management/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-google-workspace",
+      "display_name": "Google Workspace",
+      "description": "Operate Gmail, Calendar, Drive, Docs, and Sheets through verified Workspace workflows.",
+      "category": "integration",
+      "architecture": "hub",
+      "components": [
+        "User request",
+        "Gmail and Calendar",
+        "Drive and Docs",
+        "Sheets data",
+        "Verified Workspace result"
+      ],
+      "stages": [
+        "Resolve the exact Workspace surface and target",
+        "Inspect existing item IDs and permissions",
+        "Prepare the smallest read or write operation",
+        "Preview recipients sharing or mutations",
+        "Execute through the authorized connector",
+        "Re-read the item and report canonical links"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-google-workspace/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-heartmula",
+      "display_name": "Heartmula",
+      "description": "Use HeartMuLa for Suno-like song generation from lyrics and tags.",
+      "category": "creative",
+      "architecture": "pipeline",
+      "components": [
+        "Lyrics and musical tags",
+        "HeartMuLa model",
+        "Generation parameters",
+        "Audio renderer",
+        "Song variants"
+      ],
+      "stages": [
+        "Structure lyrics into sections",
+        "Choose genre mood tempo and vocal tags",
+        "Set seed duration and variation controls",
+        "Generate bounded song candidates",
+        "Listen for structure artifacts and clipping",
+        "Keep the strongest version and metadata"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-heartmula/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-hermes-agent",
+      "display_name": "Hermes Agent",
+      "description": "Configure, extend, or contribute to Hermes Agent with explicit local/runtime safety boundaries.",
+      "category": "integration",
+      "architecture": "stack",
+      "components": [
+        "Hermes configuration",
+        "Agent runtime",
+        "Tools and models",
+        "Skills and memory",
+        "Verified behavior"
+      ],
+      "stages": [
+        "Identify the requested Hermes extension",
+        "Inspect configuration and runtime version",
+        "Add the smallest compatible change",
+        "Connect tools skills or model settings",
+        "Run a disposable behavior check",
+        "Document rollback and environment assumptions"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-hermes-agent/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-hermes-desktop-plugins",
+      "display_name": "Hermes Desktop Plugins",
+      "description": "Write Hermes desktop plugins that add UI panes and commands.",
+      "category": "integration",
+      "architecture": "stack",
+      "components": [
+        "Plugin manifest",
+        "Desktop command registry",
+        "UI pane component",
+        "Hermes host bridge",
+        "Packaged plugin"
+      ],
+      "stages": [
+        "Define pane command and data contract",
+        "Create plugin metadata and entry point",
+        "Implement the desktop UI surface",
+        "Connect approved host APIs",
+        "Run inside a disposable Hermes profile",
+        "Package with install and removal guidance"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-hermes-desktop-plugins/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-himalaya",
+      "display_name": "Himalaya",
+      "description": "Use the Himalaya CLI for IMAP/SMTP email workflows with recipient and send gates.",
+      "category": "integration",
+      "architecture": "split",
+      "components": [
+        "Email intent",
+        "IMAP mailbox",
+        "Message draft",
+        "Recipient approval gate",
+        "SMTP send and verification"
+      ],
+      "stages": [
+        "Resolve account mailbox and thread",
+        "Read the minimum necessary messages",
+        "Draft recipients subject and body",
+        "Show the final outbound payload",
+        "Send only after explicit approval",
+        "Verify the message in Sent"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-himalaya/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-huggingface-hub",
+      "display_name": "Hugging Face Hub",
+      "description": "Search, download, and upload models or datasets using the Hugging Face CLI.",
+      "category": "integration",
+      "architecture": "hub",
+      "components": [
+        "Model or dataset need",
+        "Hub search and metadata",
+        "hf CLI cache",
+        "Local artifact",
+        "Optional upload"
+      ],
+      "stages": [
+        "Search compatible models or datasets",
+        "Inspect license size format and provenance",
+        "Select a pinned revision",
+        "Download into the controlled cache",
+        "Verify checksums and expected files",
+        "Upload only approved scrubbed artifacts"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-huggingface-hub/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-jupyter-live-kernel",
+      "display_name": "Jupyter Live Kernel",
+      "description": "Run iterative Python analysis through a live Jupyter kernel.",
+      "category": "integration",
+      "architecture": "loop",
+      "components": [
+        "Question and dataset",
+        "Persistent Python kernel",
+        "Notebook cells",
+        "Plots and tables",
+        "Reproducible result"
+      ],
+      "stages": [
+        "Load only the required data",
+        "Inspect schema shape and missingness",
+        "Run small iterative analysis cells",
+        "Visualize intermediate findings",
+        "Restart or correct stale kernel state",
+        "Save a reproducible narrative and outputs"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-jupyter-live-kernel/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-llama-cpp",
+      "display_name": "llama.cpp",
+      "description": "Run local GGUF inference with llama.cpp and discover compatible models through Hugging Face.",
+      "category": "integration",
+      "architecture": "pipeline",
+      "components": [
+        "GGUF model requirement",
+        "Hugging Face discovery",
+        "Local model cache",
+        "llama.cpp runtime",
+        "Generated tokens"
+      ],
+      "stages": [
+        "Choose parameter size quantization and context",
+        "Verify license hardware and memory fit",
+        "Download a pinned GGUF file",
+        "Launch llama.cpp with bounded settings",
+        "Run a deterministic smoke prompt",
+        "Report throughput memory and limitations"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-llama-cpp/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-manim-video",
+      "display_name": "Manim Video",
+      "description": "Create Manim Community Edition animations for mathematical and algorithmic explanations.",
+      "category": "creative",
+      "architecture": "pipeline",
+      "components": [
+        "Math or algorithm concept",
+        "Scene storyboard",
+        "Manim objects and animation",
+        "Renderer",
+        "MP4 explanation"
+      ],
+      "stages": [
+        "Break the concept into visual beats",
+        "Define equations geometry and camera moves",
+        "Implement scenes with reusable objects",
+        "Render a low-resolution draft",
+        "Correct timing labels and occlusion",
+        "Export the final narrated-ready MP4"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-manim-video/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-maps",
+      "display_name": "Maps",
+      "description": "Geocode places and calculate points of interest, routes, and time zones through OpenStreetMap and OSRM.",
+      "category": "research",
+      "architecture": "split",
+      "components": [
+        "Place names or coordinates",
+        "Nominatim geocoder",
+        "OpenStreetMap graph",
+        "OSRM router",
+        "Route and time-zone result"
+      ],
+      "stages": [
+        "Normalize origins destinations and travel mode",
+        "Geocode each place to coordinates",
+        "Inspect candidate confidence and region",
+        "Request the route from OSRM",
+        "Calculate distance duration and waypoints",
+        "Return map links and ambiguity notes"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-maps/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-nano-pdf",
+      "display_name": "Nano Pdf",
+      "description": "Edit PDF text, typos, and titles with nano-pdf while preserving the source artifact.",
+      "category": "integration",
+      "architecture": "pipeline",
+      "components": [
+        "Source PDF",
+        "Requested text edit",
+        "PDF object locator",
+        "nano-pdf rewrite",
+        "Rendered comparison"
+      ],
+      "stages": [
+        "Preserve an untouched source copy",
+        "Locate the exact page and text object",
+        "Apply only the requested replacement",
+        "Save to a new output path",
+        "Render before and after pages",
+        "Compare text layout and metadata"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-nano-pdf/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-node-inspect-debugger",
+      "display_name": "Node.js Inspect Debugger",
+      "description": "Debug Node.js processes through the inspect protocol and Chrome DevTools Protocol.",
+      "category": "engineering",
+      "architecture": "loop",
+      "components": [
+        "Node.js failure",
+        "--inspect endpoint",
+        "Chrome DevTools Protocol",
+        "Breakpoint and heap evidence",
+        "Root-cause report"
+      ],
+      "stages": [
+        "Launch or attach to the approved process",
+        "Discover scripts targets and source maps",
+        "Set focused breakpoints or exception pause",
+        "Inspect call frames variables and events",
+        "Test the leading runtime hypothesis",
+        "Detach cleanly and report evidence"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-node-inspect-debugger/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-notion",
+      "display_name": "Notion",
+      "description": "Read, search, create, and edit Notion pages and databases through verified API workflows.",
+      "category": "integration",
+      "architecture": "hub",
+      "components": [
+        "Workspace request",
+        "Page and database schema",
+        "Notion API payload",
+        "Page or record mutation",
+        "Re-read verification"
+      ],
+      "stages": [
+        "Resolve workspace page database and property IDs",
+        "Inspect schema and current values",
+        "Draft the exact create or edit payload",
+        "Preview affected content and relations",
+        "Execute the authorized API operation",
+        "Fetch the result and verify properties"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-notion/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-obsidian",
+      "display_name": "Obsidian",
+      "description": "Read, search, create, and edit notes in an Obsidian vault while preserving links and structure.",
+      "category": "integration",
+      "architecture": "graph",
+      "components": [
+        "Vault path",
+        "Markdown notes",
+        "Wiki links and tags",
+        "Backlink graph",
+        "Updated knowledge vault"
+      ],
+      "stages": [
+        "Confirm the intended vault and note scope",
+        "Search titles content links and tags",
+        "Preserve frontmatter and existing structure",
+        "Create or edit the smallest note set",
+        "Rebuild links without orphaning references",
+        "Verify files backlinks and rendered markdown"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-obsidian/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-ocr-and-documents",
+      "display_name": "OCR and Documents",
+      "description": "Extract text and structure from PDFs and scans using OCR and document parsers.",
+      "category": "integration",
+      "architecture": "pipeline",
+      "components": [
+        "PDF or scanned images",
+        "Page rasterizer",
+        "OCR and layout detector",
+        "Structured text normalizer",
+        "Searchable export"
+      ],
+      "stages": [
+        "Inspect file type page count and quality",
+        "Render pages at OCR-safe resolution",
+        "Detect text blocks tables and reading order",
+        "Recognize text with confidence values",
+        "Normalize headings paragraphs and tables",
+        "Export searchable text with page references"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-ocr-and-documents/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-opencode",
+      "display_name": "OpenCode",
+      "description": "Delegate bounded coding tasks and PR reviews to OpenCode with explicit scope and verification.",
+      "category": "engineering",
+      "architecture": "split",
+      "components": [
+        "Bounded coding task",
+        "Repository context",
+        "OpenCode session",
+        "Patch and review",
+        "Verification evidence"
+      ],
+      "stages": [
+        "Define allowed files behavior and constraints",
+        "Load project instructions and relevant context",
+        "Delegate implementation or PR review",
+        "Inspect the produced patch and claims",
+        "Run independent tests and static checks",
+        "Return a reviewable evidence-backed handoff"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-opencode/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-openhue",
+      "display_name": "OpenHue",
+      "description": "Control Philips Hue lights, scenes, and rooms through a reversible OpenHue workflow.",
+      "category": "integration",
+      "architecture": "hub",
+      "components": [
+        "Room and light inventory",
+        "OpenHue bridge",
+        "Scene or brightness command",
+        "Physical light state",
+        "Rollback scene"
+      ],
+      "stages": [
+        "Resolve bridge room light and current state",
+        "Preview brightness color or scene changes",
+        "Capture the prior scene for rollback",
+        "Send the bounded OpenHue command",
+        "Read bridge state after the change",
+        "Restore or report the verified state"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-openhue/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-p5js",
+      "display_name": "p5.js",
+      "description": "Build generative art, shaders, interactive sketches, and 3D scenes with p5.js.",
+      "category": "creative",
+      "architecture": "canvas",
+      "components": [
+        "Sketch concept",
+        "p5.js canvas",
+        "Drawing and shader code",
+        "Interactive controls",
+        "Browser-rendered artwork"
+      ],
+      "stages": [
+        "Define canvas size motion and interaction",
+        "Build the drawing loop and scene state",
+        "Add geometry particles shader or 3D forms",
+        "Expose useful live controls",
+        "Run at multiple viewport sizes",
+        "Capture a deterministic seed and preview"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-p5js/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-plan",
+      "display_name": "Plan",
+      "description": "Write an actionable markdown plan to .hermes/plans/ with bite-sized tasks and exact paths.",
+      "category": "agent",
+      "architecture": "stack",
+      "components": [
+        "User goal",
+        "Repository evidence",
+        "Dependencies and constraints",
+        "Bite-sized tasks",
+        ".hermes plan file"
+      ],
+      "stages": [
+        "Inspect the current project without changing it",
+        "Define outcome scope and non-goals",
+        "Identify dependencies risks and decisions",
+        "Break work into independently verifiable tasks",
+        "Attach exact paths and validation commands",
+        "Save the actionable markdown plan"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-plan/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-powerpoint",
+      "display_name": "Powerpoint",
+      "description": "Create, read, and edit PowerPoint decks, slides, notes, and templates.",
+      "category": "creative",
+      "architecture": "canvas",
+      "components": [
+        "Message and audience",
+        "Deck structure",
+        "Slide layouts",
+        "Visual assets and notes",
+        "Rendered PPTX"
+      ],
+      "stages": [
+        "Define the audience decision and narrative",
+        "Outline one message per slide",
+        "Apply a consistent layout and visual system",
+        "Build charts diagrams and speaker notes",
+        "Render every slide for visual inspection",
+        "Deliver the editable deck and PDF preview"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-powerpoint/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-pretext",
+      "display_name": "Pretext",
+      "description": "Build creative browser demos with DOM-free text layout, typographic flow, and text-powered interactions.",
+      "category": "creative",
+      "architecture": "canvas",
+      "components": [
+        "Text corpus",
+        "Pretext layout engine",
+        "Obstacle and flow geometry",
+        "Interactive motion",
+        "Single-file browser demo"
+      ],
+      "stages": [
+        "Choose the typographic behavior and canvas",
+        "Define text blocks obstacles and flow rules",
+        "Lay out DOM-free glyph geometry",
+        "Add motion interaction or game state",
+        "Profile responsiveness and frame timing",
+        "Export a self-contained HTML demo"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-pretext/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-public-social-source-scrubbing",
+      "display_name": "Public Social Source Scrubbing",
+      "description": "Scrub public social and source accounts into local intelligence artifacts without login, secrets, private scraping, or social actions.",
+      "category": "research",
+      "architecture": "pipeline",
+      "components": [
+        "Public profile URLs",
+        "Logged-out browser capture",
+        "Visible captions and text",
+        "Local intake record",
+        "Promotion review queue"
+      ],
+      "stages": [
+        "Confirm sources are public and in scope",
+        "Browse without login or private scraping",
+        "Capture only visible text captions and links",
+        "Normalize provenance and observation time",
+        "Store candidates in a local intake artifact",
+        "Require review before broader promotion"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-public-social-source-scrubbing/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-segment-anything-model",
+      "display_name": "Segment Anything Model",
+      "description": "Use SAM for zero-shot image segmentation with points, boxes, or masks.",
+      "category": "creative",
+      "architecture": "pipeline",
+      "components": [
+        "Source image",
+        "Point box or mask prompt",
+        "SAM image encoder",
+        "Mask decoder",
+        "Segmentation overlays"
+      ],
+      "stages": [
+        "Load and normalize the source image",
+        "Choose positive points boxes or prior mask",
+        "Encode image features once",
+        "Decode candidate object masks",
+        "Compare confidence and edge quality",
+        "Export mask cutout and overlay preview"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-segment-anything-model/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-simplify-code",
+      "display_name": "Simplify Code",
+      "description": "Perform a parallel cleanup pass over recent code changes while preserving behavior and user work.",
+      "category": "engineering",
+      "architecture": "split",
+      "components": [
+        "Recent change set",
+        "Three cleanup lenses",
+        "Candidate refactors",
+        "Behavior tests",
+        "Simplified patch"
+      ],
+      "stages": [
+        "Freeze the intended behavior and user changes",
+        "Review readability duplication and structure",
+        "Compare independent cleanup candidates",
+        "Select only low-risk improvements",
+        "Run existing and focused regression tests",
+        "Return a smaller behavior-preserving diff"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-simplify-code/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-sketch",
+      "display_name": "Sketch",
+      "description": "Create throwaway HTML mockups with two or three design variants for comparison.",
+      "category": "creative",
+      "architecture": "canvas",
+      "components": [
+        "Product question",
+        "Shared content model",
+        "Variant A",
+        "Variant B",
+        "Comparison notes"
+      ],
+      "stages": [
+        "Define the single design decision to explore",
+        "Create common content and constraints",
+        "Build two or three HTML variants",
+        "Render at desktop and phone sizes",
+        "Compare hierarchy density and interaction",
+        "Keep the selected direction or discard all"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-sketch/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-songwriting-and-ai-music",
+      "display_name": "Songwriting And Ai Music",
+      "description": "Develop songwriting craft and structured prompts for AI music generation.",
+      "category": "creative",
+      "architecture": "loop",
+      "components": [
+        "Song concept",
+        "Lyric and section craft",
+        "Music-generation prompt",
+        "Audio variants",
+        "Revision notes"
+      ],
+      "stages": [
+        "Define theme point of view and emotional arc",
+        "Draft sections hooks and lyrical imagery",
+        "Translate arrangement into model-readable tags",
+        "Generate controlled musical variants",
+        "Listen for prosody structure and originality",
+        "Revise lyrics and prompt with evidence"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-songwriting-and-ai-music/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-touchdesigner-mcp",
+      "display_name": "TouchDesigner MCP",
+      "description": "Control a running TouchDesigner instance through MCP to create operators, set parameters, wire networks, and execute Python.",
+      "category": "creative",
+      "architecture": "graph",
+      "components": [
+        "Visual brief",
+        "TouchDesigner process",
+        "Operator network",
+        "MCP parameter commands",
+        "Rendered realtime output"
+      ],
+      "stages": [
+        "Confirm the running TouchDesigner instance",
+        "Inspect existing operators paths and connections",
+        "Create the smallest operator network",
+        "Set parameters and wire dependencies",
+        "Execute approved Python or pulses",
+        "Inspect viewer output and runtime errors"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-touchdesigner-mcp/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-understand-chat",
+      "display_name": "Understand Chat",
+      "description": "Ask targeted questions about a codebase using its knowledge graph rather than guessing from filenames.",
+      "category": "engineering",
+      "architecture": "graph",
+      "components": [
+        "Developer question",
+        "Existing code knowledge graph",
+        "Entity and path search",
+        "Evidence bundle",
+        "Grounded answer"
+      ],
+      "stages": [
+        "Translate the question into graph entities",
+        "Locate relevant components and symbols",
+        "Traverse calls imports and data paths",
+        "Open the minimum supporting source excerpts",
+        "Compose an answer from graph evidence",
+        "Cite files symbols and uncertainty"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-understand-chat/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-understand-dashboard",
+      "display_name": "Understand Dashboard",
+      "description": "Launch an interactive dashboard that visualizes a codebase knowledge graph.",
+      "category": "engineering",
+      "architecture": "hub",
+      "components": [
+        "Code knowledge graph",
+        "Graph service",
+        "Filters and search",
+        "Interactive dashboard",
+        "Selected component detail"
+      ],
+      "stages": [
+        "Load the existing graph artifact",
+        "Start the local visualization service",
+        "Render clusters nodes and relationships",
+        "Apply language path and component filters",
+        "Inspect selected-node evidence",
+        "Report dashboard URL and graph freshness"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-understand-dashboard/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-understand-domain",
+      "display_name": "Understand Domain",
+      "description": "Extract business-domain knowledge from a codebase and generate an interactive domain flow graph.",
+      "category": "engineering",
+      "architecture": "graph",
+      "components": [
+        "Repository evidence",
+        "Domain entities",
+        "Business rules",
+        "Use-case flows",
+        "Domain knowledge graph"
+      ],
+      "stages": [
+        "Extract nouns events states and actors",
+        "Resolve code names into domain concepts",
+        "Link rules to implementing components",
+        "Trace representative business workflows",
+        "Cluster bounded contexts and ownership",
+        "Render an evidence-linked domain graph"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-understand-domain/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-understand-explain",
+      "display_name": "Understand Explain",
+      "description": "Provide a deep-dive explanation of a specific file, function, or module using codebase evidence.",
+      "category": "engineering",
+      "architecture": "stack",
+      "components": [
+        "File function or module",
+        "Knowledge graph neighborhood",
+        "Source excerpts",
+        "Runtime relationships",
+        "Deep-dive explanation"
+      ],
+      "stages": [
+        "Resolve the exact symbol and revision",
+        "Load its graph neighborhood",
+        "Inspect implementation tests and callers",
+        "Explain inputs state and control flow",
+        "Describe failure modes and side effects",
+        "Cite evidence and open questions"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-understand-explain/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-understand-figma",
+      "display_name": "Understand Figma",
+      "description": "Analyze a Figma file through its REST API and generate a design knowledge graph.",
+      "category": "engineering",
+      "architecture": "graph",
+      "components": [
+        "Figma file key",
+        "REST API document tree",
+        "Components and instances",
+        "Styles and variables",
+        "Design knowledge graph"
+      ],
+      "stages": [
+        "Fetch pages nodes components and styles",
+        "Normalize frames variants and instances",
+        "Resolve component-instance relationships",
+        "Extract reusable variables and tokens",
+        "Cluster screens and design-system families",
+        "Render an interactive design graph"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-understand-figma/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-understand-knowledge",
+      "display_name": "Understand Knowledge",
+      "description": "Analyze a Karpathy-pattern LLM wiki and generate a knowledge graph with entities and topic clusters.",
+      "category": "research",
+      "architecture": "graph",
+      "components": [
+        "Markdown knowledge base",
+        "Entity extractor",
+        "Explicit and implicit links",
+        "Topic clustering",
+        "Knowledge dashboard"
+      ],
+      "stages": [
+        "Index notes headings links and citations",
+        "Extract people concepts artifacts and claims",
+        "Connect explicit backlinks and inferred relations",
+        "Score and label implicit relationships",
+        "Cluster topics and bridge nodes",
+        "Render a queryable knowledge graph"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-understand-knowledge/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-weights-and-biases",
+      "display_name": "Weights & Biases",
+      "description": "Log ML experiments, run sweeps, manage a model registry, and build W&B dashboards.",
+      "category": "integration",
+      "architecture": "hub",
+      "components": [
+        "Training script",
+        "Run metrics and artifacts",
+        "W&B tracking server",
+        "Sweep or registry",
+        "Experiment dashboard"
+      ],
+      "stages": [
+        "Define project run names and config",
+        "Instrument metrics tables and artifacts",
+        "Launch a bounded tracked experiment",
+        "Compare runs or execute a sweep",
+        "Promote only validated model versions",
+        "Verify dashboard and artifact lineage"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-weights-and-biases/blob/main/harness/manifest.json"
+    },
+    {
+      "id": "hermes-skill-youtube-content",
+      "display_name": "YouTube Content",
+      "description": "Turn YouTube transcripts into evidence-linked summaries, threads, or blog drafts.",
+      "category": "research",
+      "architecture": "pipeline",
+      "components": [
+        "YouTube URL",
+        "Transcript and timestamps",
+        "Claim and topic extractor",
+        "Content transformer",
+        "Source-linked draft"
+      ],
+      "stages": [
+        "Resolve the canonical video and metadata",
+        "Fetch or derive timestamped transcript text",
+        "Identify sections claims examples and quotes",
+        "Build a faithful structured summary",
+        "Adapt into thread or blog form",
+        "Retain timestamp links and uncertainty"
+      ],
+      "manifest": "https://github.com/mahsan07/hermes-skill-youtube-content/blob/main/harness/manifest.json"
+    }
+  ]
+}
